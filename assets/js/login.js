@@ -55,6 +55,7 @@ $(function() {
         $.ajax({
             url: '/api/login',
             method: 'POST',
+            // 快速获取
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
